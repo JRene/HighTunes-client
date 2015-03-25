@@ -9,7 +9,6 @@ public class HightunesBootstrap {
 		try {
 			// SecurityManager
 			String path = new File("rmi.policy").getAbsolutePath();
-			System.out.println(path);
 			System.setProperty("java.security.policy", path);
 			if (System.getSecurityManager() == null) {
 				System.setSecurityManager(new SecurityManager());
